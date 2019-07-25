@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="nav"></div>
+  <div id="home"></div>
+  <div id="vue-spa"></div>
+  <script src='https://unpkg.com/systemjs@4.1.0/dist/system.js'></script>
+  <script src='https://unpkg.com/systemjs@4.1.0/dist/extras/amd.js'></script>
+  <script src='https://unpkg.com/systemjs@4.1.0/dist/extras/named-exports.js'></script>
+  <script src='https://unpkg.com/systemjs@4.1.0/dist/extras/use-default.js'></script>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@portal/nav": "http://106.15.189.242:8111",
+        "@portal/vue": "http://106.15.189.242:8113",
+        "@portal/react": "http://106.15.189.242:8112"
+      }
+    }
+  </script>
+  <script src="/dist/single-spa.config.js"></script>
+</body>
+</html>
